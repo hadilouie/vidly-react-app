@@ -8,7 +8,6 @@ export default class Like extends Component {
 		if (!this.props.liked) classes += "-o";
 		return (
 			<div>
-				{/* <FontAwesomeIcon icon={faHeart} /> */}
 				<i
 					className={classes}
 					onClick={this.props.onClick}
