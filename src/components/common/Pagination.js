@@ -17,6 +17,7 @@ export const Pagination = (props) => {
 						className={page === currentPage ? "page-item active" : "page-item"}
 					>
 						<a
+							href="/#"
 							onClick={() => onPageChange(page)}
 							className="page-link"
 							style={{ cursor: "pointer" }}

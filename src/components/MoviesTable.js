@@ -2,17 +2,17 @@ import React from "react";
 import Like from "./common/Like";
 
 const MoviesTable = (props) => {
-	const { movies, onLike, onDelete } = props;
+	const { movies, onLike, onDelete, onSort } = props;
 	console.log(movies);
 
 	return (
 		<table className="table">
 			<thead>
 				<tr>
-					<th>Title</th>
-					<th>Genre</th>
-					<th>Stock</th>
-					<th>Rate</th>
+					<th onClick={() => onSort("title")}>Title</th>
+					<th onClick={() => onSort("genre.name")}>Genre</th>
+					<th onClick={() => onSort("numberInStock")}>Stock</th>
+					<th onClick={() => onSort("dailyRentalRate")}>Rate</th>
 					<th></th>
 					<th></th>
 				</tr>
